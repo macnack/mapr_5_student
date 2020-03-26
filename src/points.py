@@ -36,7 +36,7 @@ class Point:
 
 
 if __name__ == '__main__':
-    rp.init_node('points', log_level=rp.DEBUG)
+    rp.init_node('points')
     #st = Point(1.2, 1.2, "start", (0.0, 1.0, 0.0))
     #en = Point(2.8, 2.8, "end", (1.0, 0.0, 0.0))
     st = Point(0.7, 0.7, "start", (0.0, 1.0, 0.0))

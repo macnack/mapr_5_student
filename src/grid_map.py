@@ -10,7 +10,7 @@ class GridMap:
         self.map = None
         self.start = None
         self.end = None
-        rp.init_node('graph_search', log_level=rp.DEBUG)
+        rp.init_node('graph_search')
         rp.Subscriber('map', OccupancyGrid, self.map_callback)
         rp.Subscriber('point_start', Marker, self.set_start)
         rp.Subscriber('point_end', Marker, self.set_end)
