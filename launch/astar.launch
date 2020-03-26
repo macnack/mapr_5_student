@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find mapr_4_student)/launch/map_small.launch" />
+<node name="graph_search" pkg="mapr_4_student" type="astar.py" output="screen" />
+<node name="points" pkg="mapr_4_student" type="points.py" output="screen" />
+<node name="rviz" pkg="rviz" type="rviz" />
+</launch>
