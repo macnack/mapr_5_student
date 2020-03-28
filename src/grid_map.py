@@ -5,7 +5,7 @@ from nav_msgs.msg import OccupancyGrid, Path
 from visualization_msgs.msg import Marker
 
 
-class GridMap:
+class GridMap(object):
     def __init__(self):
         self.map = None
         self.start = None
