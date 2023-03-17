@@ -53,9 +53,9 @@ class GridMap(Node):
         x, y = self.get_marker_xy(data)
         self.end = (x, y)
 
-    def publish_visited(self):
+    def publish_visited(self, delay=0.5):
         self.pub_map.publish(self.map)
-        time.sleep(0.5)
+        time.sleep(delay)
 
     def publish_path(self, path):
         path_msg = Path()
